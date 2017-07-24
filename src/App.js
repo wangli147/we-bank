@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Carousel } from 'antd';
 import './App.css';
-import Home from './js/Home'
+import Home from './js/Home';
+import Finance from './js/Finance';
 import {
   BrowserRouter as Router,
   Route,
@@ -14,12 +15,12 @@ class App extends Component {
       <Router>
 	    <div>
 	      <ul>
-	        <li><Link to="/">Home</Link></li>
+          <li><Link to="/Finance">个人金融</Link></li>
 	      </ul>
 
 	      <hr/>
-
 	      <Route exact path="/" component={Home}/>
+        <Route exact path="/Finance" component={Finance}/>
 	    </div>
   </Router>
     );

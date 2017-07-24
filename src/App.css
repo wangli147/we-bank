@@ -1,5 +1,48 @@
 @import '~antd/dist/antd.css';
-.ant-carousel .slick-slide {
+.left{
+  float:left;
+  content:"";
+  display:block;
+}
+.right{
+  float:right;
+  content:"";
+  display:block;
+}
+.clear:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .ant-carousel .slick-slide {
   text-align: center;
   height: 160px;
   line-height: 160px;
@@ -12,7 +55,6 @@
 }
 
 .ant-carousel .slick-prev{
-  /* background:#fff; */
   left:50px;
   color:#f00;
   z-index:5;
@@ -36,8 +78,9 @@
 .App-intro {
   font-size: large;
 }
-
-@keyframes App-logo-spin {
+ */
+/* @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+ */
