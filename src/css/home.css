@@ -1,4 +1,5 @@
 /* 首页开始 */
+@import '~antd/dist/antd.css';
 .wl_home{
 	position: fixed!important;
     top: 0;
@@ -6,7 +7,7 @@
     right: 0;
     bottom: 0;
     z-index: 0;
-    height: 100%;
+    height: 100vh;
     background: url(../imgs/intro-35fd714069.jpg) no-repeat 50% 0;
     background-size: cover;
     text-align: center;
@@ -91,21 +92,19 @@
     transition:.5s all;
 }
 .wl_phoneO{	
-    z-index: 100;
+    z-index: 20;
     animation: 1s move1 forwards;/*
     transform: translate(-106.5px, 25px) scale(1); */
 }
 .wl_phoneS{
     
-    z-index: 85;
-    transition:.5s all .2s;
+    z-index: 19;
     width:250px;
     /* transform: translate(-262.661px, 60.625px) scale(0.85); */
     animation: 1s move2 forwards;
 }
 .wl_phoneT{
-    z-index: 85;
-    transition:.5s all .2s;
+    z-index: 19;
     width:250px;
     /* transform: translate(112.761px, 60.625px) scale(0.85); */
     animation: 1s move3 forwards;
@@ -116,7 +115,6 @@
 }
 @keyframes move2 {
 	0% {transform:scale(0.85)}
-	50%{transform:scale(1)}	
 	100%{transform: translate(-262.661px, 60.625px)}	
 }
 @keyframes move3 {	
@@ -128,7 +126,7 @@
 	position: absolute;
     top: 68%;
     left: 28%;
-    z-index: 101;
+    z-index: 21;
     animation: penguin_wrap 1.6s 3.5s linear forwards;
 }
 .a-delay{
@@ -162,4 +160,167 @@
 	100% {
 	   	transform: translate(0) scale(1);
 	}
+}
+/* 中间按钮 */
+.wl_button{
+    width: 36px;
+    height: 53px;
+    border:1px solid #fff;
+    position: absolute;
+    cursor: pointer;
+    left:50%;
+    margin-left:-3.5px;
+    bottom:43px;
+    border-radius:18px;
+    z-index: 22;
+}
+.wl_button i{
+	width:7px;
+	height:7px;
+	border-radius:50%;
+	background:#fff;
+	position: absolute;
+    top: 10px;
+    left: 15px;
+    animation: 1.5s wheel_anim infinite;
+}
+@keyframes wheel_anim  {
+	0% {
+    	top: 13px;
+	}
+	20% {
+	    top: 20px;
+	}
+	30% {
+	    top: 13px;
+	}
+	50% {
+	    top: 20px;
+	}
+	60% {
+	    top: 13px;
+	}
+	100% {
+	    top: 13px;
+	}
+}
+
+/* 第二部分 轮播 */
+.wl_scroll{
+	position:absolute;
+	top:100vh;
+	background-color: #f00;
+    height: 100%;
+    z-index: 20;
+}
+.wl_scroll .wl_wraper{	
+    position: absolute;
+    display: block;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 25%;
+}
+.wl_vertical{
+	height:100%;
+}
+.wl_wraper .wl_vertical{
+	position: absolute;
+	
+}
+.wl_wraper .wl_vertical .wl_align,.text-wraper .wl_vertical .wl_align{
+	padding-top: 70px;
+}
+.wl_device{
+	max-width: 383.76px;
+	margin: 0 0 0 auto;
+    position: relative;
+    width: 492px;
+    margin-left:290px;
+}
+.wl_container{
+	position: relative;
+	/* width:100%; */
+	height:488px;
+	background:url(../imgs/iPhone.png) no-repeat;
+	background-size:contain;
+}
+
+.ant-carousel{
+	width: 195px;
+    height: 347px;
+    position: absolute;
+    z-index: 2;
+    left: 30.2%;
+    top: 10.5%;
+}
+.ant-carousel img{
+	width:100%;
+}
+/* 右边部分 */
+.wl_scroll{
+	height:300%;
+}
+.text-wraper{
+	position: absolute;
+    display: block;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    text-align: left;
+}
+.step_text{
+	max-width: 440px;
+/*     height: 25%; */
+    margin-left: 110px;
+}
+.right_img{
+	width: 93.6px;
+    height: 93.6px;
+}
+.subtitle{
+	font-size: 37px;
+    line-height: 37px;
+    color: #295ea8;
+    font-weight: 400;
+    margin: 20px 0;
+}
+.subtitleBom{
+	font-size: 15px;
+    margin-bottom: 11px;
+    color: #295ea8;
+    font-weight: 400;
+}
+.wl_weixin div{
+	display:inline-block;
+	width:131px;
+	text-align:center;
+	color: #acb2c1;
+	font-size: 12px;
+	margin-bottom: 30px;
+}
+.wl_RightQQ{
+	margin-left:20px;
+}
+.wl_weixin div img{width:131px;margin-bottom:5px;}
+.wl_details{
+	width:200px;
+	height:50px;
+    background-color: #3399eb;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    
+}
+.wl_details a{
+	display:inline-block;
+	width:200px;
+	height:50px;
+	color: #fff;
+	font-size: 20px;
+    line-height: 50px;
+}
+.detOrange{
+	background-color: #fe7639;
 }

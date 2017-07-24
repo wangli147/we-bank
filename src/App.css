@@ -75,3 +75,7 @@ li.active a{
   border-bottom: 3px solid red;
   color: #fff;
 }
+#headerS{
+  display:none;
+  background:#fff;
+}
