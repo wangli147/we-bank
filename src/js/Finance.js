@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Carousel } from 'antd';
 import '.././App.css';
 import '../css/Finance.css';
+import Footer from './Footer';
 import GrJr from '../imgs/grjr.jpg';
 import dk01 from '../imgs/dk01.png'
 import dk02 from '../imgs/dk02.png'
@@ -95,6 +96,7 @@ class Finance extends Component {
 	   				</li>
 	   			</ul>
 	   		</div>
+	   		<Footer />
 	    </div>
 
     );
