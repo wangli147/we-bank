@@ -1,43 +1,77 @@
-@import '~antd/dist/antd.css';
-.ant-carousel .slick-slide {
-  text-align: center;
-  height: 160px;
-  line-height: 160px;
-  background: #364d79;
-  overflow: hidden;
+ *{
+  margin:0;
+  padding:0;
+  font-size: 14px;
+}
+body{background:yellowgreen;}
+li{
+  list-style:none;
+}
+a{
+  text-decoration:none;
+}
+img{
+    vertical-align: middle;
+    border:0;
+}
+.left{
+  float:left;
+  content:"";
+  display:block;
+}
+.right{
+  float:right;
+  content:"";
+  display:block;
+}
+.clear:after{
+ clear:both;
+  content:"";
+  display:block;
+}
+.clear{
+  zoom:1;
 }
 
-.ant-carousel .slick-slide h3 {
+/* header部分 */
+.wl_fixed{
+  height:70px;
+}
+.wl_header{
+  padding-top: 10px;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 99;
+  transition: padding-top .5s;
+}
+.wl_merge{
+  width: 93%;
+  margin: 0 auto;
+  height: 60px;
+}
+.wl_merge .wl_logo{
+  display:inline-block;
+  height: 28px;
+  text-align: left;
+  padding: 15px 0;
+}
+.wl_nav{
+  height: 60px;
+}
+.wl_nav li{
+  float: left;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.wl_nav li a{
+  color: #cfd2da;
+  font-size: 16px;
+  padding: 22px 0 13px;
+}
+li.active a{
+  border-bottom: 3px solid red;
   color: #fff;
-}
-
-.ant-carousel .slick-prev{
-  /* background:#fff; */
-  left:50px;
-  color:#f00;
-  z-index:5;
-}
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
 }
