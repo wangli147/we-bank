@@ -4,18 +4,18 @@
     min-width: 1200px;
     border-top: 1px solid #e0e2e8;
     width: 100%;
-    table-layout: fixed;
     overflow: hidden;
     height:auto;
     color: #9298a3;
     position: relative;
     transition: height .3s ease-in-out;
+    z-index:50;
 }
 .wl_Finner{
-	padding: 40px 30px;
     width: 1140px;
     margin: 0 auto;
     height: auto;
+    padding:30px 0;
 }
 .wl_mainFo{
 	width:1140px;

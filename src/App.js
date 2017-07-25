@@ -7,6 +7,7 @@ import Finance from './js/Finance';
 import AboutMe from './js/AboutMe';
 import logo from './imgs/logo.png';
 import logos from './imgs/logo2.png';
+
 import {
   BrowserRouter as Router,
   Route,
@@ -54,12 +55,14 @@ class App extends Component {
         </div>
 
   	      <Route exact path="/" component={Home}/>
-  	      <Route exact path="/finance" component={Finance}/>
-          <Route exact path="/AboutMe" component={AboutMe}/>
+          
+  	      <Route path="/finance" component={Finance}/>
+          <Route path="/AboutMe" component={AboutMe}/>
           {/*<Route exact path="/Qiye" component={Qiye}/>
           
           <Route exact path="/About" component={About}/>
           <Route exact path="/News" component={News}/>*/}
+         
       </div>
   </Router>
     );
