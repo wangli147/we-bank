@@ -3,6 +3,7 @@ import { Carousel } from 'antd';
 import './App.css';
 import Home from './js/Home';
 import Finance from './js/Finance';
+import AboutMe from './js/AboutMe';
 import logo from './imgs/logo.png';
 import {
   BrowserRouter as Router,
@@ -23,6 +24,7 @@ class App extends Component {
                         <li className="active"><Link to="/">首页</Link></li>
                         {/*<li><Link to="/Qiye">企业金融</Link></li>*/}
                         <li><Link to="/finance">个人金融</Link></li>
+                        <li><Link to="/AboutMe">关于我们</Link></li>
                          {/*<li><Link to="/About">关于我们</Link></li>
                         <li><Link to="/News">公告新闻</Link></li>*/}
                      </ul>          
@@ -32,6 +34,7 @@ class App extends Component {
 
   	      <Route exact path="/" component={Home}/>
   	      <Route exact path="/finance" component={Finance}/>
+          <Route exact path="/AboutMe" component={AboutMe}/>
           {/*<Route exact path="/Qiye" component={Qiye}/>
           
           <Route exact path="/About" component={About}/>

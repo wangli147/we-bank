@@ -7,10 +7,14 @@ li{
   list-style:none;
 }
 a{
-  text-direction:none;
+  text-decoration:none; 
 }
 .x-warp{
  overflow:hidden;
+ position:absolute;
+ top:0;
+ left:0;
+ width:100vw;
 
 }
 .Finance{
