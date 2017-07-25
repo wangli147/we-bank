@@ -4,6 +4,7 @@ import './App.css';
 import $ from 'jquery';
 import Home from './js/Home';
 import Finance from './js/Finance';
+import News from './js/News';
 import AboutMe from './js/AboutMe';
 import logo from './imgs/logo.png';
 import logos from './imgs/logo2.png';
@@ -36,6 +37,7 @@ class App extends Component {
                         <li><Link to="/AboutMe">关于我们</Link></li>
                          {/*<li><Link to="/About">关于我们</Link></li>
                         <li><Link to="/News">公告新闻</Link></li>*/}
+                        <li><Link to="/News">公告新闻</Link></li>
                      </ul>          
                 </div>  
             </div>
@@ -48,6 +50,7 @@ class App extends Component {
                         <li><Link to="/finance">个人金融</Link></li>
                          {/*<li><Link to="/About">关于我们</Link></li>
                         <li><Link to="/News">公告新闻</Link></li>*/}
+                        <li><Link to="/News">公告新闻</Link></li>
                      </ul>          
                 </div>  
             </div>
@@ -56,6 +59,7 @@ class App extends Component {
   	      <Route exact path="/" component={Home}/>
   	      <Route exact path="/finance" component={Finance}/>
           <Route exact path="/AboutMe" component={AboutMe}/>
+           <Route exact path="/News" component={News}/>
           {/*<Route exact path="/Qiye" component={Qiye}/>
           
           <Route exact path="/About" component={About}/>

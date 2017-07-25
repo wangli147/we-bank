@@ -1,0 +1,25 @@
+@import '~antd/dist/antd.css';
+*{
+  margin:0;
+  padding:0;
+}
+li{
+  list-style:none;
+}
+a{
+  text-decoration:none; 
+}
+.x-warp{
+background:rgba(0,0,0,.2);
+height:694px;
+
+}
+.x-news-box{
+
+width:840px;
+padding-left:60px;
+height:694px;
+background:#fff;
+margin:120px auto;
+
+}

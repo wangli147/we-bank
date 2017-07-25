@@ -10,33 +10,37 @@ a{
   text-decoration:none; 
 }
 .x-warp{
- overflow:hidden;
  position:absolute;
  top:0;
  left:0;
- width:100vw;
+ width:100%;
+ overflow:hidden;
+
+
+
 
 }
 .AboutMe{
  position:relative;
+ overflow:hidden;
+
 }
-.AboutMe li{
-  width:100vw;
+.listO{
+  height:100vh;
 }
 .listO .banJR img{
   height:100vh;
 }
- .listO{
-  height:100vh;
-}
+
 .listO h4{
-  color:#fff;
+  color:#295ea8;
   position:fixed;
   top:30%;
   right:44px;
   font-size:13px;
   line-height:55px;
-  width:100px;
+  width:200px;
+  text-align:center;
 }
 .listO h4 a{
   width:19px;
@@ -47,11 +51,15 @@ a{
   position:absolute;
   top:18px;
   right:0;
-}
+} 
+/* .listS{
+  overflow:hidden;
+  width:1000px;
+  background:red;
+} */
 .listS h4{
   text-align:center;
   font-size:20px;
-  padding:20px 0;
 
 }
 .listS-content{
@@ -59,17 +67,79 @@ a{
 
 }
 .yqlj{
+  width:960px;
+  margin:0 auto;
+
+}
+.yqlj a{
   float:left;
   width:249px;
   height:116px;
   text-align:center;
+  margin:0 20px;
+}
+.yqlj a img{
+  width:162px;
+  height:76px;
+  margin:0 40px;
+  margin-bottom:15px;
+}
+.Peoclass{
+   width:850px;
+  margin:0 auto;
+
 }
 
+.Peoclass div{
+  float:left;
+  width:241px;
+  height:249px;
+  background:rgba(0,0,0,.1);
+  margin:0 20px;
+  margin-bottom:50px;
+}
+.Peoclass div img{
+  float:left;
+  width:241px;
+  height:189.84px;
 
+}
+.Peoclass div p{
+  height:80px;
+  line-height:80px;
+  color:#295ea8;
+  font-size:18px;
 
+}
 
+.listS h4{
+  color:#295ea8;
+  position:fixed;
+  top:35%;
+  right:44px;
+  font-size:13px;
+  line-height:55px;
+  width:200px;
+  text-align:center;
+}
+.listS h4 a{
+  width:19px;
+  height:18px;
+  float:right;
+  border-radius:50%;
+  background:#3399eb;
+  position:absolute;
+  top:18px;
+  right:0;
 
-
-
-
-
+} 
+.listS-content h2{
+  color:#295ea8;
+  font-size:20px;
+  padding:20px 0;
+}
+.listS-content h5{
+  color:#295ea8;
+  font-size:20px;
+  padding:20px 0;
+}
