@@ -63,13 +63,15 @@ img{
 }
 .wl_nav li{
   float: left;
+  height:100%;
   margin-left: 24px;
   margin-right: 24px;
 }
 .wl_nav li a{
   color: #cfd2da;
   font-size: 16px;
-  padding: 22px 0 13px;
+  float:left;
+  padding:22px 0 13px;
 }
 li.active a{
   border-bottom: 3px solid red;
