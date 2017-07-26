@@ -55,11 +55,10 @@ class App extends Component {
                 </div>  
             </div>
         </div>
-
   	      <Route exact path="/" component={Home}/>
   	      <Route exact path="/finance" component={Finance}/>
           <Route exact path="/AboutMe" component={AboutMe}/>
-           <Route exact path="/News" component={News}/>
+          <Route exact path="/News" component={News}/>
           {/*<Route exact path="/Qiye" component={Qiye}/>
           
           <Route exact path="/About" component={About}/>
