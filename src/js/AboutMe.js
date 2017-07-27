@@ -54,7 +54,11 @@ class AboutMe extends Component {
               </div>
             </div>
           </li>
-          <li className="listT">
+          <li className="listT">         
+          </li>
+          <li className="listTh">         
+          </li>
+          <li className="listF">         
           </li>
 
 		 </ul>	    

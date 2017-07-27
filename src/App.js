@@ -57,15 +57,9 @@ class App extends Component {
             </div>
         </div>
   	      <Route exact path="/" component={Home}/>
-<<<<<<< HEAD
-          
-  	      <Route path="/finance" component={Finance}/>
-          <Route path="/AboutMe" component={AboutMe}/>
-=======
   	      <Route exact path="/finance" component={Finance}/>
           <Route exact path="/AboutMe" component={AboutMe}/>
           <Route exact path="/News" component={News}/>
->>>>>>> origin/master
           {/*<Route exact path="/Qiye" component={Qiye}/>
           
           <Route exact path="/About" component={About}/>
