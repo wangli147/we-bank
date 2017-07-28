@@ -33,7 +33,6 @@
     height: 100%;
     display: table;
     table-layout: fixed;
-/*     overflow: hidden; */
     position: relative;
     transition: height .3s ease-in-out;
 }
@@ -61,9 +60,6 @@
 	font-size: 46px;
 	margin-top: 180px;
 	color:#fff;
-	/* position:absolute; */
-	/* left:-506px; */
-
 }
 .a-fadeinL{
 	animation:1s fadeinL ease-out .5s backwards;
@@ -147,9 +143,6 @@
     z-index: 21;
     animation: penguin_wrap 1.6s 3.5s linear forwards;
 }
-.a-delay{
-	transition-delay: 2.3s;
-}
 @keyframes penguin_wrap {
 	0% {
 	    transform: translate(0) scale(1);
@@ -223,15 +216,18 @@
 	    top: 13px;
 	}
 }
-
+.spacer{
+	display: block;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+}
 /* 第二部分 轮播 */
 .wl_scroll{
-	position:absolute;
-	top:100vh;
+	position:relative;
 	background-color: #f00;
-    height: 300%;
+    height: 300vh;
     z-index: 20;
-    /* height:1173px; */
 }
 .wl_scroll .wl_wraper{	
     position: absolute;
@@ -279,9 +275,7 @@
 	width:100%;
 }
 /* 右边部分 */
-.wl_scroll{
-	
-}
+
 .text-wraper{
 	position: absolute;
     display: block;
@@ -374,6 +368,5 @@
 	width:100%;
 	height:300px;
 	background:red;
-/* 	position:absolute;
-	bottom:-240px; */
+
 }

@@ -31,11 +31,10 @@ class Finance extends Component {
 		   						</div>
 		   						<div className="con-head-Img">
 		   							<img src={dk03} alt=""/>
-
 		   						</div>
 		   					</div>
 	   						<div className="x-con-box">
-	   						 	<p className="x-tit">优选产品</p>
+	   						 	<p className="x-tit">优选产品</p>5
 	   						 	<p className="x-con">让您省心</p>
 	   						 	<p className="x-tit">实时提现</p>
 	   						 	<p className="x-con">让您放心</p>

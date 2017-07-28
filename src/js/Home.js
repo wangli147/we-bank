@@ -3,7 +3,7 @@ import { Carousel } from 'antd';
 import '.././App.css';
 import '../css/home.css';
 import $ from 'jquery';
-import Footer from './Footer'
+import Footer from './Footer';
 import phone1 from '../imgs/phone1.png';
 import phone2 from '../imgs/phone2.png';
 import phone3 from '../imgs/phone3.png';
@@ -47,11 +47,15 @@ class Home extends Component {
 		        else{
 		            header.style.position = 'fixed';
 		            deviceLeft.style.position = 'absolute';
+		            deviceLeft.style.top = '50px';
 		            header.style.top = '0';
-		             deviceLeft.style.top = '50px';
+		            
 		            header.style.display='block';
 		            headerS.style.display='none';
 		        }
+		       /* if(scrollTop>=1990){
+		        	deviceLeft.removeAttribute('id')
+		        }*/
 		        $(function(){
 		        	if(scrollTop>height.offsetTop){
 		        		$('.ant-carousel .wl_two').find('img').css('display','none')
@@ -60,10 +64,10 @@ class Home extends Component {
 		        		$('.ant-carousel .wl_two').find('img').css('display','block')
 		        		$('.ant-carousel .wl_four').find('img').css('display','none')
 		        	}
-		        	if(scrollTop>=2006){
-		        		// deviceLeft.style.position='absolute';
-		        		// deviceLeft.style.bottom='-10px';
-		        	}
+		        	// if(scrollTop>=2006){
+		        	// 	deviceLeft.style.position='absolute';
+		        	// 	deviceLeft.style.bottom='-10px';
+		        	// }
 		        })
 		        
 			// console.log(height.offsetTop)
@@ -125,11 +129,12 @@ class Home extends Component {
 	    			</div>
 	    		</div>
 	    	</div>
+	    	<div className="spacer"></div>
 	    	/*第二部分*/
 	    	<div className="modPage wl_scroll modBand" id="scroll">
 	    	<div className="wl_relative">
-	    			<div className="wl_wraper" id="deviceLeft">
-	    				<div className="wl_vertical">
+	    			<div className="wl_wraper">
+	    				<div className="wl_vertical" id="deviceLeft"> 
 	    					<div className="wl_align">
 	    						<div className="wl_device">
 	    							<div className="wl_container">

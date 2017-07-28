@@ -3,6 +3,7 @@ import { Carousel } from 'antd';
 import './App.css';
 import $ from 'jquery';
 import Home from './js/Home';
+import Enterprise from './js/Enterprise';
 import Finance from './js/Finance';
 import News from './js/News';
 import AboutMe from './js/AboutMe';
@@ -33,11 +34,9 @@ class App extends Component {
                     <Link to="/"  className="wl_logo left"><img src={logo} alt="logo"/></Link> 
                      <ul className="right wl_nav">
                         <li className="active"><Link to="/">首页</Link></li>
-                        {/*<li><Link to="/Qiye">企业金融</Link></li>*/}
+                        <li><Link to="/Enterprise">企业金融</Link></li>
                         <li><Link to="/finance">个人金融</Link></li>
                         <li><Link to="/AboutMe">关于我们</Link></li>
-                         {/*<li><Link to="/About">关于我们</Link></li>
-                        <li><Link to="/News">公告新闻</Link></li>*/}
                         <li><Link to="/News">公告新闻</Link></li>
                      </ul>          
                 </div>  
@@ -47,23 +46,32 @@ class App extends Component {
                     <Link to="/"  className="wl_logo left"><img src={logos} alt="logos"/></Link> 
                      <ul className="right wl_nav">
                         <li className="active"><Link to="/">首页</Link></li>
-                        {/*<li><Link to="/Qiye">企业金融</Link></li>*/}
+                        <li><Link to="/Enterprise">企业金融</Link></li>
                         <li><Link to="/finance">个人金融</Link></li>
-                         {/*<li><Link to="/About">关于我们</Link></li>
-                        <li><Link to="/News">公告新闻</Link></li>*/}
+                        <li><Link to="/AboutMe">关于我们</Link></li>
                         <li><Link to="/News">公告新闻</Link></li>
                      </ul>          
                 </div>  
             </div>
         </div>
   	      <Route exact path="/" component={Home}/>
+
   	      <Route exact path="/finance" component={Finance}/>
           <Route exact path="/AboutMe" component={AboutMe}/>
           <Route exact path="/News" component={News}/>
           {/*<Route exact path="/Qiye" component={Qiye}/>
+
+
           
-          <Route exact path="/About" component={About}/>
-          <Route exact path="/News" component={News}/>*/}
+  	      <Route path="/finance" component={Finance}/>
+          <Route path="/AboutMe" component={AboutMe}/>
+
+  	      <Route path="/finance" component={Finance}/>
+          <Route path="/AboutMe" component={AboutMe}/>
+          <Route path="/News" component={News}/>*/}
+          <Route path="/Enterprise" component={Enterprise}/>
+
+          
          
       </div>
   </Router>

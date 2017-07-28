@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import '.././App.css';
 import '../css/AboutMe.css';
+import { Carousel } from 'antd';
+import Footer from './Footer';
 import AboutImage from '../imgs/aboutMe.jpg';
 import Image1 from '../imgs/gd01.png';
 import Image2 from '../imgs/gd02.png';
@@ -8,7 +9,20 @@ import Image3 from '../imgs/gd03.png';
 import peo1 from '../imgs/peo1.jpg';
 import peo2 from '../imgs/peo2.jpg';
 import peo3 from '../imgs/peo3.jpg';
+import img1 from '../imgs/lan-bg.jpg';
+import img2 from '../imgs/line-bg.png';
 class AboutMe extends Component {
+
+componentDidMount(){
+//     function onChange(a, b, c) {
+//   console.log(a, b, c);
+// }
+
+
+
+}
+
+
   render() {
     return (
     	<div className="x-warp">
@@ -54,18 +68,154 @@ class AboutMe extends Component {
               </div>
             </div>
           </li>
-          <li className="listT">         
-          </li>
-          <li className="listTh">         
-          </li>
-          <li className="listF">         
-          </li>
+          <li className="listT">
+              <div className="lunboTwo">
+                   <h4>微众里程碑</h4>
+                      <Carousel arrows>
+                        <div>
+                        <div className="item">
+                            <div className="item-head"></div>
+                            <div className="item-con">
+                                  <h6>深圳前海微众银行股份有限公司正式成立</h6>
+                                  <p>在获得《深圳银监局关于深圳前海微众银行股份有限公司开业的批复》
+                                  （深银监复〔2014〕420号）并取得金融许可证之后，我行于2014年12月16日获得营业执照、组织机构代码、
+                                  税务登记证，宣告深圳前海微众银行股份有限公司正式成立。
+                                  </p>
 
-		 </ul>	    
+
+                            </div>
+                         </div>                              
+                        </div>                       
+                      </Carousel>
+              </div>
+          </li>
+          <li className="listTh">                
+                  <div className="lunboTwo">
+                   <h4>荣誉榜</h4>
+                      <Carousel arrows>
+                        <div className="lun-box">
+                              <ul>
+                                <li>
+                                  <div></div>
+                                </li>
+                                <li>
+                                  <div></div>
+                                </li>
+                                <li>
+                                  <div></div>
+                                </li>
+                                <li>
+                                  <div></div>
+                                </li>
+                                <li>
+                                  <div></div>
+                                </li>
+                                <li>
+                                  <div></div>
+                                </li>
+                                <li>
+                                  <div></div>
+                                </li>
+                                <li>
+                                  <div></div>
+                                </li>
+                                <li>
+                                  <div></div>
+                                </li>                              
+                              </ul>
+                        </div>
+                        <div className="lun-box">
+                              <ul>
+                                <li>
+                                  <div></div>
+                                </li>
+                                <li>
+                                  <div></div>
+                                </li>
+                                <li>
+                                  <div></div>
+                                </li>
+                                <li>
+                                  <div></div>
+                                </li>
+                                <li>
+                                  <div></div>
+                                </li>
+                                <li>
+                                  <div></div>
+                                </li>
+                                <li>
+                                  <div></div>
+                                </li>
+                                <li>
+                                  <div></div>
+                                </li>
+                                <li>
+                                  <div></div>
+                                </li>                              
+                              </ul>
+                        </div>
+                        <div className="lun-box">
+                              <ul>
+                                <li>
+                                  <div></div>
+                                </li>
+                                <li>
+                                  <div></div>
+                                </li>
+                                <li>
+                                  <div></div>
+                                </li>
+                                <li>
+                                  <div></div>
+                                </li>
+                                <li>
+                                  <div></div>
+                                </li>
+                                <li>
+                                  <div></div>
+                                </li>
+                                <li>
+                                  <div></div>
+                                </li>
+                                <li>
+                                  <div></div>
+                                </li>
+                                <li>
+                                  <div></div>
+                                </li>                              
+                              </ul>
+                        </div>                       
+                      </Carousel>
+              </div>
+          </li>
+          <li className="listF"> 
+              <img src={img1} alt="" className="lan-bg"/>
+              <p>连接伙伴</p>
+              <div className="line-bg">
+                  <div className="icon-1 line-bg-classOne"></div>
+                  <div className="icon-2 line-bg-classOne"></div>
+                  <div className="icon-3 line-bg-classOne"></div>
+                  <div className="icon-1 line-bg-classTwo"></div>
+                  <div className="icon-2 line-bg-classTwo"></div>
+                  <div className="icon-3 line-bg-classTwo"></div>
+                  <div className="icon-4 line-bg-classTwo"></div>
+                  <div className="icon-5 line-bg-classTwo"></div>
+                  <div className="icon-6 line-bg-classTwo"></div>
+                  <div className="icon-1 line-bg-classThree"></div>
+                  <div className="icon-2 line-bg-classThree"></div>
+                  <div className="icon-1 line-bg-classFore"></div>
+                  <div className="icon-2 line-bg-classFore"></div>
+                  <div className="icon-3 line-bg-classFore"></div>
+                  <div className="icon-1 line-bg-classFive"></div>
+                  <div className="icon-1 line-bg-classSix"></div>
+              </div>
+          </li>
+		 </ul>
+     <Footer />	    
 	    </div>
 
     );
   }
 }
-
 export default AboutMe;

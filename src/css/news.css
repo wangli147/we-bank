@@ -68,6 +68,10 @@ padding-bottom:100px;
 .x-first li.x-one{
   display:block;
 }
-
-
+#header{
+  display:none;
+}
+#headerS{
+  display:block;
+}
 /*  */
